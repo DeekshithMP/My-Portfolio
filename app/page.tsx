@@ -1,35 +1,33 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import EducationSection from "@/components/EducationSection";
+import SkillsSection from "@/components/SkillsSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import ProjectsSection from "@/components/ProjectsSection";
-import SkillsSection from "@/components/SkillsSection";
-import EducationSection from "@/components/EducationSection";
 import CertificationsSection from "@/components/CertificationsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import { portfolioData } from "@/data/portfolio-data";
 
 export default function HomePage() {
-  const { personal, education } = portfolioData;
+  const { personal, education, skills } = portfolioData;
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
     name: personal.name,
-    jobTitle: personal.title,
     email: personal.email,
     telephone: personal.phone,
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Bengaluru",
-      addressCountry: "India",
+      addressLocality: education.location,
     },
     alumniOf: {
       "@type": "CollegeOrUniversity",
-      name: education[0].institution,
+      name: education.institution,
     },
-    knowsAbout: portfolioData.skills.flatList,
+    knowsAbout: skills,
   };
 
   return (
@@ -44,10 +42,10 @@ export default function HomePage() {
 
       <main className="flex flex-col">
         <Hero />
+        <EducationSection />
+        <SkillsSection />
         <ExperienceSection />
         <ProjectsSection />
-        <SkillsSection />
-        <EducationSection />
         <CertificationsSection />
         <ContactSection />
       </main>

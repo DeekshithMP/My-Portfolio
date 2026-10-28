@@ -1,121 +1,66 @@
-# Deekshith M P &mdash; AI & Machine Learning Engineer Portfolio
+# Deekshith M P &mdash; Portfolio Website
 
-A modern, executive-grade portfolio website engineered with Next.js (App Router, Server-Side Rendering) and Tailwind CSS. Tailored specifically for deploying to Netlify, featuring 100% authentic resume data, a custom geometric monogram "D" favicon, zero emojis, and production-level SEO optimization.
+Professional Next.js (App Router, Server-Side Rendering) portfolio website configured for Netlify deployment. Strictly contains only the verified resume content with zero extra or dummy data, custom monogram "D" favicon, and strictly zero emojis.
 
 ---
 
-## Technical Specifications
+## Technical Stack
 
-- **Framework**: Next.js 14 (App Router)
-- **Rendering Architecture**: Server-Side Rendering (SSR) via React Server Components
-- **Styling**: Tailwind CSS with custom glassmorphism and fine-border dark theme
+- **Framework**: Next.js 14 (App Router, SSR)
+- **Styling**: Tailwind CSS
 - **Icons**: Lucide React + custom inline SVGs (Strictly zero emojis)
-- **Favicon**: Custom monogram "D" SVG and Next.js dynamic image generation
-- **SEO & Structured Data**: Built-in JSON-LD (`schema.org/Person`), OpenGraph, Twitter Cards, robots meta
-- **Deployment Target**: Netlify (preconfigured with `@netlify/plugin-nextjs` in `netlify.toml`)
+- **Favicon**: Custom monogram "D" vector icon (`/favicon.svg`) and Next.js dynamic edge icon (`/icon`)
+- **Hosting Target**: Netlify (`netlify.toml` preconfigured with `@netlify/plugin-nextjs`)
 
 ---
 
-## Directory Structure
+## Portfolio Content (Verbatim from Resume)
 
-```
-├── app/
-│   ├── globals.css          # Design system, glassmorphic utilities, custom scrollbar
-│   ├── icon.tsx             # Next.js dynamic edge favicon generator with monogram 'D'
-│   ├── layout.tsx           # Root layout with SSR metadata, font styling, and schema
-│   ├── not-found.tsx        # Branded 404 page
-│   └── page.tsx             # SSR homepage composing all sections and JSON-LD schema
-├── components/
-│   ├── CertificationsSection.tsx  # 5 verified certifications + leadership roles
-│   ├── ContactSection.tsx         # Interactive contact card with direct copy & mailto
-│   ├── EducationSection.tsx       # Global Academy of Technology B.E. details
-│   ├── ExperienceSection.tsx      # LEARNER'S BYTE AI Intern details
-│   ├── Footer.tsx                 # Clean footer with site map and SSR badges
-│   ├── Hero.tsx                   # Hero banner, technical dossier, credentials
-│   ├── Icons.tsx                  # Custom SVG icons (LinkedIn, etc.)
-│   ├── Navbar.tsx                 # Sticky navigation, mobile menu, quick resume link
-│   ├── ProjectsSection.tsx        # 6 filterable production-grade project cards
-│   └── SkillsSection.tsx          # Categorized domain skills & flat resume skill index
-├── data/
-│   └── portfolio-data.ts    # Single source of truth containing 100% real PDF data
-├── public/
-│   ├── DEEKSHITH_M_P_Resume.pdf  # Downloadable PDF resume
-│   └── favicon.svg               # Vector favicon with geometric monogram 'D'
-├── netlify.toml             # Netlify deployment configuration for Next.js SSR
-├── next.config.mjs          # Next.js configuration
-├── tailwind.config.ts       # Tailwind CSS design tokens
-└── tsconfig.json            # TypeScript configuration
-```
+- **Name**: Deekshith M P
+- **Contact**: `deekshithmp1ga22ai012@gmail.com` | `+91 8147101611` | `LINKEDIN`
+- **EDUCATION**:
+  - GLOBAL ACADEMY OF TECHNOLOGY (Nov 2022 - June 2026)
+  - B.E | ARTIFICIAL INTELLIGENCE & MACHINE LEARNING | CGPA: 7.6 Bengaluru
+- **SKILLS**:
+  - Python, C, React.js, HTML, CSS, MySQL, MongoDB, Data Science, Machine Learning, LLM, NLP, Generative AI, n8n, Tableau, Power BI, Blockchain, MS Word, MS Excel, Google Sheets, make.com
+- **EXPERIENCE**:
+  - LEARNER’S BYTE - AI Intern (Jan 2026 – May 2026): Worked on Generative AI and Agentic AI-based solutions, developing AI-powered automation workflows using the n8n platform to streamline repetitive tasks. Contributed to intelligent workflow automation and AI-driven process optimization projects while integrating LLM-based capabilities into real-world development and automation applications.
+- **PROJECTS**:
+  1. SKIN DISEASE DETECTION - [AI, ML, CNN, TF-IDF vectorization]: Developed a web application to detect and classify skin diseases using deep learning and text-based feature extraction techniques.
+  2. LLM GUARDRAILS - [Python, Hugging Face Transformers, BART MNLI, FastAPI, Streamlit, Groq API]: Developed a real-time AI safety layer for LLM applications to detect and block harmful instructions, self-harm content, & prompt injection attacks. Implemented zero-shot classification with BART MNLI and a confidence-based decision layer to balance safety and false positives, achieving approximately 300–500 ms P95 latency for CPU-based inference.
+  3. VISTA - Visually Impaired Smart Tracking Assistant - [IoT, CNN, Yolov8, OCR, ML, AI features]: Built a system that prioritizes safety by providing voice-controlled scene description, automatic fall detection, and GPS-enabled emergency location alerts for immediate assistance.
+  4. NLP CUSTOMER REVIEW ANALYTICS DASHBOARD - [NLTK, Scikit-Learn, spaCy, VADER, Plotly, WordCloud, Seaborn, Matplotlib, Altair, Streamlit, Custom CSS]: Developed an NLP-based dashboard to analyze e-commerce reviews using sentiment analysis & topic modelling. Built an interactive Streamlit dashboard with visualizations for sentiment trends, customer complaints, & keyword insights.
+  5. TITANIC SURVIVAL PREDICTION – [Pandas, NumPy, Scikit-Learn, Random Forest, Preprocessing, Streamlit, Kafka, Docker]: Built an end-to end machine learning system that predicts whether a passenger survived the disaster by using historical data, ML models, interactive dashboards, and real-time streaming using Kafka.
+  6. AI RECRUITMENT SYSTEM - [n8n, Grok API, Gmail API, Google Sheets, JavaScript]: Built an AI-driven recruitment platform that automates resume screening, candidate evaluation, & communication workflows. Integrated AI powered resume parsing, job-fit scoring, automated interview invitations, & candidate tracking to improve recruitment efficiency,
+- **CERTIFICATIONS**:
+  - Web Development (60 days training + 35 days of internship where I built an PG Life website for students to search and book PG accommodations across cities) from Internshala
+  - PySpark from Infosys Springboard
+  - Project Excellence: Mastering your minor and major Projects with Real-World Case Studies using Gen AI/Agentic AI/ML from EXCELR
+  - LLM, NLP, AI and ML involving chatbot development, & Gradio based application Workshop- Mevi Technologies
+  - TechA Cloud Computing using Microsoft Azure Certification from Infosys Springboard
+- **LEADERSHIP EXPERIENCE**:
+  - Sub-core Member VTU Youth Fest 2025 & Headed the AIML Department's Event Management Club
 
 ---
 
-## Verified Portfolio Content (From PDF)
+## Local Development & Build
 
-- **Education**: Global Academy of Technology (Nov 2022 - June 2026), B.E. in Artificial Intelligence & Machine Learning (CGPA: 7.6)
-- **Experience**: LEARNER'S BYTE &mdash; AI Intern (Jan 2026 – May 2026) focusing on Generative AI, Agentic Workflows, and n8n platform automation.
-- **Projects**:
-  1. **LLM Guardrails**: Real-time AI safety layer with BART MNLI zero-shot classification, achieving 300–500 ms P95 CPU inference latency.
-  2. **VISTA (Visually Impaired Smart Tracking Assistant)**: IoT, YOLOv8 scene narration, automatic fall detection, and GPS emergency alerts.
-  3. **AI Recruitment System**: n8n, Grok API, Gmail API, and Google Sheets candidate screening automation.
-  4. **NLP Customer Review Analytics Dashboard**: VADER & spaCy sentiment analysis, topic modeling, Streamlit, and Plotly visualizations.
-  5. **Titanic Survival Prediction**: Random Forest model, Docker containerization, and Apache Kafka real-time streaming inference.
-  6. **Skin Disease Detection**: Convolutional Neural Networks (CNN) with TF-IDF symptom vectorization.
-- **Certifications**: Internshala Web Development (PG Life portal), Infosys Springboard PySpark, EXCELR Project Excellence (Gen AI / Agentic AI), Mevi Technologies LLM Chatbot Workshop, and Infosys Springboard Microsoft Azure Cloud Computing.
-- **Leadership**: Sub-core Member VTU Youth Fest 2025 & Head of AIML Department Event Management Club.
-
----
-
-## Getting Started Locally
-
-### 1. Install Dependencies
 ```bash
-npm install
-```
-
-### 2. Start the Development Server
-```bash
+# Start development server
 npm run dev
-```
-Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### 3. Build for Production (SSR)
-```bash
+# Production build and SSR start
 npm run build
 npm start
 ```
 
 ---
 
-## Deploying to Netlify
+## Netlify Deployment
 
-This project is pre-configured for Netlify with `netlify.toml`:
-
-### Option A: Deploy via GitHub (Recommended)
-1. Initialize a Git repository and commit the files:
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: Initial commit of Deekshith M P portfolio"
-   ```
-2. Push your repository to GitHub / GitLab / Bitbucket.
-3. Log in to [Netlify](https://app.netlify.com).
-4. Click **Add new site** &gt; **Import an existing project**.
-5. Select your Git repository. Netlify automatically detects Next.js settings from `netlify.toml`:
+1. Push this repository to GitHub / GitLab / Bitbucket.
+2. In Netlify, select **Import from Git** and choose this repository.
+3. Build settings from `netlify.toml` are automatically detected:
    - **Build command**: `npm run build`
    - **Publish directory**: `.next`
-6. Click **Deploy Site**. Netlify will build and deploy the SSR application.
-
-### Option B: Deploy via Netlify CLI
-1. Install Netlify CLI globally (if not already installed):
-   ```bash
-   npm install -g netlify-cli
-   ```
-2. Log in and initialize deployment:
-   ```bash
-   netlify login
-   netlify init
-   ```
-3. Deploy to production:
-   ```bash
-   netlify deploy --prod
-   ```
+4. Click **Deploy Site**.

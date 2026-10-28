@@ -2,47 +2,28 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Deekshith M P | AI & Machine Learning Engineer",
+  title: "Deekshith M P | Portfolio",
   description:
-    "Portfolio of Deekshith M P, AI & Machine Learning Engineer specializing in Generative AI, Agentic Workflows, LLM Guardrails, and Distributed Real-Time Systems.",
-  keywords: [
-    "Deekshith M P",
-    "Artificial Intelligence Engineer",
-    "Machine Learning Engineer",
-    "Generative AI",
-    "Agentic AI",
-    "LLM Guardrails",
-    "BART MNLI",
-    "FastAPI",
-    "n8n Automation",
-    "Global Academy of Technology",
-    "Bengaluru",
-  ],
+    "Portfolio of Deekshith M P - B.E in Artificial Intelligence & Machine Learning, Global Academy of Technology, Bengaluru.",
   authors: [{ name: "Deekshith M P" }],
   creator: "Deekshith M P",
   icons: {
-    icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
-    ],
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
     apple: "/favicon.svg",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    title: "Deekshith M P | AI & Machine Learning Engineer",
+    title: "Deekshith M P | Portfolio",
     description:
-      "AI & Machine Learning Engineer specializing in Generative AI, Agentic Workflows, and Production LLM Safety.",
-    siteName: "Deekshith M P Portfolio",
+      "Portfolio of Deekshith M P - B.E in Artificial Intelligence & Machine Learning, Global Academy of Technology, Bengaluru.",
+    siteName: "Deekshith M P",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Deekshith M P | AI & Machine Learning Engineer",
+    title: "Deekshith M P | Portfolio",
     description:
-      "AI & Machine Learning Engineer specializing in Generative AI, Agentic Workflows, and Production LLM Safety.",
-  },
-  robots: {
-    index: true,
-    follow: true,
+      "Portfolio of Deekshith M P - B.E in Artificial Intelligence & Machine Learning, Global Academy of Technology, Bengaluru.",
   },
 };
 
